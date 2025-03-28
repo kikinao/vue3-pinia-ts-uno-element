@@ -1,0 +1,10 @@
+// 滚动条
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--el-border-color-darker);
+  border-radius: 20px;
+}

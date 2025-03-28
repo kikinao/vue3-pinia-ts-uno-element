@@ -1,0 +1,36 @@
+:root {
+  --el-color-primary: #3366FF !important;
+  --el-button-hover-bg-color: #3366FF !important;
+  --el-button-hover-bg-color: rgba(51, 102, 255, 0.8) !important;
+  //--el-button-hover-bg-color: rgba(51, 102, 255, 0.8) !important;
+  //--el-color-primary-light-1: #3366FF;
+  //--el-color-primary-light-2: #3366FF;
+  // 状态码颜色
+  --state-success: #1F9940; //成功状态的主题色
+  --state-danger: #E65050; //错误状态的主题色
+  --state-warning: #FF7D00; //警告状态的主题色
+  --state-primary: #3366FF; //空闲状态的主题色
+  --state-info: #F2F3F5; //离线状态的主题色
+
+  // 字体颜色
+  --text-color-primary: #14161A; // 强调-正文字体颜色
+  --text-color-secondary: #333333; // 次强调-文字字体颜色
+  --text-color-third: #666666; // 信息-文字字体颜色
+  --text-color-fourth: #999999; // 辅助-文字字体颜色
+  --text-color-fifth: #FFFFFF; // 占位-文字字体颜色
+
+  // 主色系列
+  --color-primary: #3366FF; // 主题色
+  --color-hover: #D2E1FF; //特殊场景背景色
+  --color-click: #0E42D2; //点击状态颜色
+  --color-other: #567DF5; //悬浮色
+
+  // 填充色
+  --fill-bg: #F2F3F5; // 主要-背景颜色
+  --fill-deep-hover: #E5E6EB; // 深灰填充颜色
+  --fill-disable: #F7F8FA; // 禁用填充颜色
+
+  // 边框主题色
+  --border-primary: #DADDE6; // 主要-边框颜色
+  --border-secondary: #DEE3ED; // 次要-边框颜色
+}
