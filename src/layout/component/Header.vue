@@ -1,5 +1,7 @@
 <template>
-  <el-header class="my-header">Header</el-header>
+  <div class="my-header w-full h15">
+    <el-header class="my-header">Header</el-header>
+  </div>
 </template>
 
 <script setup lang="ts" name="my_header">

@@ -4,6 +4,7 @@ import '@/style/variable.scss'
 
 // 公共样式
 import '@/style/common.scss'
+import 'virtual:uno.css';
 
 import {createApp} from 'vue'
 import {setupStore} from '@/stores'
