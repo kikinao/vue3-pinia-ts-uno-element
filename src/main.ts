@@ -4,7 +4,10 @@ import '@/style/variable.scss'
 
 // 公共样式
 import '@/style/common.scss'
+
+// 其余样式组件库
 import 'virtual:uno.css';
+import "virtual:svg-icons-register";
 
 import {createApp} from 'vue'
 import {setupStore} from '@/stores'

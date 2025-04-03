@@ -1,7 +1,7 @@
 <template>
-  <div class="my-main p5">
+  <div class="my-main-box p5">
     <Breadcrumb/>
-    <el-main>
+    <el-main class="my-main mt5">
       <RouterView v-slot="{Component, route}">
         <!-- 过渡动画 appear首次渲染过渡 -->
         <transition appear mode="out-in" name="fade">
@@ -19,6 +19,8 @@ import Breadcrumb from "@/layout/component/Breadcrumb.vue";
 
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.my-main {
+  background: #FFFFFF;
+}
 </style>

@@ -6,8 +6,11 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
+import {createSvgIconsPlugin} from 'vite-plugin-svg-icons'
 import UnoCSS from 'unocss/vite'
+import path from "node:path";
 
+const pathSrc = path.resolve(__dirname, 'src')
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -24,6 +27,12 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
       dts: 'src/auto/components.d.ts',
     }),
+    createSvgIconsPlugin({
+      // 指定需要缓存的图标文件夹-路径错误将会无法展示
+      iconDirs: [path.resolve(pathSrc, 'assets/icons')],
+      // 指定symbolId格式
+      symbolId: 'icon-[dir]-[name]',
+    })
   ],
   server: {
     port: 8000,

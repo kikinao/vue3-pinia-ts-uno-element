@@ -1,7 +1,7 @@
 import {defineStore} from 'pinia'
 import {ref} from 'vue'
 
-export const useSystemStore = defineStore('system', () => {
+export const useGlobalStore = defineStore('global', () => {
   const menuCollapse = ref<boolean>(false)
 
   function setMenuCollapse(data: boolean) {

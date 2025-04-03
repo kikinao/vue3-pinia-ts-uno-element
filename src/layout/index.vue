@@ -1,5 +1,5 @@
 <template>
-  <el-container class="my_container w-full h-full overflow-hidden">
+  <el-container class="my_container w-screen h-screen overflow-hidden">
     <AsideMenu/>
     <div class="my-container-main flex flex-col w-full">
       <Header/>
@@ -16,4 +16,7 @@ import AsideMenu from "@/layout/component/AsideMenu.vue";
 
 
 <style lang="scss" scoped>
+.my_container {
+  background: var(--fill-disable);
+}
 </style>
